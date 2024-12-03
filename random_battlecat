@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>랜덤 단어 생성기</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #word {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>랜덤 단어 생성기</h1>
+  <button onclick="generateWord()">단어 생성</button>
+  <p id="word">여기에 단어가 표시됩니다.</p>
+
+  <script>
+    function generateWord() {
+      const words = [
+        '고양이', '탱크 고양이', '배틀 고양이', '징글 고양이', '황소 고양이', 
+        '고양이 새', '고양이 피쉬', '고양이 도마뱀', '고양이 거신', 'Mr.', 
+        '고양이 밧줄', '여왕 고양이', '고양이 한박스', '고양이 팬티', '귀여미', 
+        '고양이 세발자전거', '고양이 닌자', '고양이 좀비', '고양이 무사', 
+        '스모 고양이', '고양이 피버', '고양이 스커트', '고양이 발키리', '고양이 무트'
+      ];
+      const randomIndex = Math.floor(Math.random() * words.length);
+      document.getElementById('word').innerText = words[randomIndex];
+    }
+  </script>
+</body>
+</html>
