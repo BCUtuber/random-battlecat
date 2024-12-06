@@ -23,9 +23,9 @@
   </style>
 </head>
 <body>
-  <h1>랜덤 단어 생성기</h1>
+  <h1>랜덤 냥코 캐릭터 생성기</h1>
   <button onclick="generateWord()">단어 생성</button>
-  <p id="word">여기에 단어가 표시됩니다.</p>
+  <p id="word">여기에 냥코가 표시됩니다.</p>
 
   <script>
     function generateWord() {
